@@ -5,7 +5,8 @@ const droppableElements = document.querySelectorAll('.droppable');
 // Select notification and overlay elements
 const notification = document.querySelector('.notification');
 const overlay = document.querySelector('.overlay');
-
+//instructions
+const instt = document.querySelector('.inst');
 // Select elements to display correct and wrong counts
 const correctCountElement = document.querySelector('.correct-count .count');
 const wrongCountElement = document.querySelector('.wrong-count .count');
@@ -19,7 +20,7 @@ const maxCount = 8;
 // Initialize correct and wrong counters
 let correctCount = 0;
 let wrongCount = 0;
-
+updateEnergyBar();
 // Add dragstart event listener to each draggable element
 draggableElements.forEach(elem => {
     elem.addEventListener("dragstart", dragStart);
